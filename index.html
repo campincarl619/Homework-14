@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		UFO Sightings
+	</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!--<script src="jquery-3.3.1.min.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+<font face="Times New Roman">
+
+
+<div class="container-fluid" style="background-color: white">
+	<div class="row" style="background-color: lightgrey">
+		<div class="col-lg-12"  style="text-align: center">
+			<h1>UFO Sightings</h1>
+			<img style="width: 40%" src="https://78.media.tumblr.com/8b9c5c110d29b66a9214fbc5ce0b01dc/tumblr_o8mz4uQuRb1umsk1no1_1280.gif">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12" style="text-align: center">
+			<h1>Add Sighting</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<br>
+			<br>
+			<table style="width: 100%">
+				<tr>
+					<th>
+						<div class="form-group">
+							<label for="usr">Date/Time:</label>
+							<input type="text" class="form-control" id="datetime">
+						</div>
+					</th>
+					<th>
+						<div class="form-group">
+							<label for="usr">City:</label>
+							<input type="text" class="form-control" id="city">
+						</div>
+					</th>
+					<th>
+						<div class="form-group">
+							<label for="usr">State:</label>
+							<input type="text" class="form-control" id="state">
+						</div>
+					</th>
+					<th>
+						<div class="form-group">
+							<label for="usr">Country:</label>
+							<input type="text" class="form-control" id="country">
+						</div>
+					</th>
+					<th>
+						<div class="form-group">
+							<label for="usr">Shape:</label>
+							<input type="text" class="form-control" id="shape">
+						</div>
+					</th>
+					<th>
+						<div class="form-group">
+							<label for="usr">Duration:</label>
+							<input type="text" class="form-control" id="duration">
+						</div>
+					</th>
+					<th>
+						<div class="form-group">
+							<label for="usr">Comment:</label>
+							<input type="text" class="form-control" id="comments">
+						</div>
+					</th>
+				</tr>
+			</table>
+			<div>
+				<form>
+				<div class="row"></div>
+	  			<a id="add-ufo" class="btn btn-default">Add Sighting</a>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+			<div class="col-md-4">
+			<div class="form-group">
+				<br>
+				<br>
+	  			<input type="text" class="form-control" id="searchC" placeholder="Leave blank for all rows">
+	  			<select id ="searchType">
+			        <option value = 0>Date/Time</option>
+			        <option value = 1>City</option>
+			        <option value = 2>State</option>
+					<option value = 3>Country</option>
+					<option value = 4>Shape</option>
+			    </select>
+	  			<a id="search" class="btn btn-default">Search</a>
+	  		</div>
+	  	</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<h4>Select Number of Rows:</h4>
+			<div class = "form-group">
+				<select name="state" id="maxRows" class="form-control" style="width: 150px;">
+					<option value="1000000">Show All</option>
+					<option value="50">50</option>
+					<option value="100">100</option>
+					<option value="200">200</option>
+					<option value="500">500</option>
+					<option value="1000">1000</option>
+					<option value="2000">2000</option>
+					<option value="5000">5000</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	  	<div class="col-md-12">
+			<br>
+			<br>
+			<table class="table table-striped" style="width: 100%">
+				<thead>
+					<tr>
+	      				<th>Date/Time</th>
+	    	  			<th>City</th>
+	      				<th>State</th>
+	      				<th>Country</th>
+	      				<th>Shape</th>
+	      				<th>Duration</th>
+	    	  			<th>Comment</th>
+		    		</tr>
+	      		</thead>
+	      		<tbody id="table2">
+	  			</tbody>
+			</table>
+		</div>
+	</div>
+</div>	
+
+
+<script src="page.js"></script>	
+<script src="data.js"></script>	
+<script src="table.js"></script>
+<script src="index.js" type="text/javascript"></script>
+
+
+
+</body>
+</html>
